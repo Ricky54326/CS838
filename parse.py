@@ -33,6 +33,7 @@ def main():
                     #print "Found! ", word;
 
                 words.append(word);
+        reviews.append(" ".join(words)); # one final append
 
     count = 0
     print "Reviews found: ", len(reviews)
