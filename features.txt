@@ -1,0 +1,7 @@
+1) Check articles (if there is one, feature value is 1 else 0)
+2) Check quotations (if there is one, feature value is 1 else 0)
+3) Number of words between tags
+4) Check if all the words start with capital letter (if it is, feature value is 1 else 0)
+5) Check if the ending tag is followed by "'s" (if it is, feature value is 1 else 0)
+6) Check if the ending tag ends the sentence (if it is, feature value is 1 else 0)
+7) Label
