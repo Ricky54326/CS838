@@ -10,11 +10,12 @@ import re
 def main():
 
     # file to open
-    filename = "reviews-riccardo.csv"
+    filename = "trainReviews.csv"
 
     # regex for start/end of review
     # [\s] is any whitespace
-    regex = "[0-9]+[\s][0-9]+"
+    # regex = "[0-9]+[\s][0-9]+" # use this one for the tagged_reviews.csv
+    regex = "[0-9]+,[0-9]+" # use this one for the finalized trainReview/testReview.csv
 
     # reviews will be list of list of string
     # words will be list of string (one review)
@@ -37,6 +38,11 @@ def main():
 
     count = 0
     print "Reviews found: ", len(reviews)
+
+    inp = raw_input("Write them to files? y/n\n")
+    if(inp == "n" or inp == "N"):
+        return;
+
     for review in reviews:
         fn = "reviews_individual/"+filename+"."+str(count)+".txt"
         with open(fn, 'w+') as f:
