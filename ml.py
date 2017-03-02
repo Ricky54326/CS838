@@ -18,13 +18,13 @@ def main():
     #print iris.target
 
     # load CSV data into numpy arr, ignoring CSV col
-    train_data = np.genfromtxt('./stage_2/I.csv', delimiter=',')[1:]
-    train_data_nolabel = train_data[:, :6] # the data W/o the correct class. label
-    train_data_target = train_data[:,6] # ONLY the correct classified label
+    train_data = np.genfromtxt('./stage_2/I.csv', delimiter=',')#[1:]
+    train_data_nolabel = train_data[:, :4] # the data W/o the correct class. label
+    train_data_target = train_data[:,4] # ONLY the correct classified label
 
-    test_data = np.genfromtxt('./stage_2/J.csv', delimiter=',')[1:]
-    test_data_nolabel = test_data[:, :6] # the data W/o the correct class. label
-    test_data_target = test_data[:,6] # ONLY the correct classified label
+    test_data = np.genfromtxt('./stage_2/J.csv', delimiter=',')#[1:]
+    test_data_nolabel = test_data[:, :4] # the data W/o the correct class. label
+    test_data_target = test_data[:,4] # ONLY the correct classified label
 
 
 
