@@ -1,7 +1,7 @@
-<neg>2,000</neg>
+2,000
  
-     buildings burned to the ground in <neg>Detroit</neg>
+     buildings burned to the ground in Detroit
  
-     during the <neg>12th Street</neg>
+     during the 12th Street
  
      riot. <neg>Forty-three people died</neg> and more than

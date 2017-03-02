@@ -10,7 +10,7 @@ import re
 def main():
 
     # file to open
-    filename = "trainReviews.csv"
+    filename = "testReviews.csv"
 
     # regex for start/end of review
     # [\s] is any whitespace
