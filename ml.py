@@ -80,7 +80,7 @@ def main():
 
 
 
-    print("clf: dt, rf, svm, lin_r, log_r");
+    print("clf: dt, rf, svm, log_r");
     print("P: ", p_vals);
     print("R: ", r_vals);
     print("F1: ", f1_vals);
