@@ -42,9 +42,6 @@ FROM reviews
 JOIN years_combined ON reviews.reviewid = years_combined.reviewid
 JOIN genres_combined ON reviews.reviewid = genres_combined.reviewid
 JOIN labels_combined ON reviews.reviewid = labels_combined.reviewid;
---Output the new table to a CSV
-.headers on
-.mode csv
-.output Y:\Datasets\pitchfork_reviews.csv
-SELECT * FROM pitchfork_reviews;
 .quit
+--Now that these tables are in the database, you can output the new table to a CSV via the following command:
+--sqlite3 -header -csv Pitchfork.sqlite "SELECT * FROM pitchfork_reviews ORDER BY reviewid;" > pitchfork_reviews.csv
