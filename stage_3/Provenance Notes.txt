@@ -1,0 +1,17 @@
+Provenance Notes:
+
+Pitchfork data (pitchfork_reviews.csv):
+Downloadeded pitchfork-reviews.db from here: https://github.com/nsgrantham/pitchfork-reviews
+Opened the downloaded .db file in sqlite3
+Ran "Generate Pitchfork Dataset.sql" script and exported pitchfork_reviews.csv
+
+
+Discogs data (discogs_masters.csv):
+Downloaded the March 2017 "Masters" dump (discogs_20170301_masters.xml.gz") from here: http://data.discogs.com/?prefix=data/2017/
+
+Converted Discogs XML files to CSV (required for Magellan) using xmlutils (https://github.com/knadh/xmlutils.py - installed via pip install xmlutils) using the following command:
+
+xml2csv --input "discogs_20170301_masters.xml" --output "discogs_masters.csv" --tag "master" --ignore images image role tracks data_quality videos video
+
+The resulting file is discogs_masters.csv.
+
