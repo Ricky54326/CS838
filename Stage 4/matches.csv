@@ -1,4 +1,4 @@
-_id,ltable_reviewid,rtable_id,ltable_title,ltable_artist,ltable_year,rtable_title,rtable_artist,rtable_year
+_id,p_id,d_id,p_title,p_artist,p_year,d_title,d_artist,d_year
 110,14183,221582,instant coffee baby,the wave pictures,2008,instant coffee baby,the wave pictures/the wave pictures,2008
 111,8784,198710,giving up the ghost,windsor for the derby,2005,giving up the ghost,windsor for the derby/windsor for the derby,2005
 148,15387,304915,the deep field,joan as police woman,2011,the deep field,joan as police woman/joan as police woman,2011
